@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt('Please input the first number of the triangle: ');
+        var b = prompt('Please input the second number of the triangle: ');
+        var c = prompt('Please input the third number of the triangle: ');
+        if(isNaN(a), isNaN(b), isNaN(c)){
+            alert('Please only enter real numbers for the sides of the triangle.');
+        }
+        else{
+            determineTriangle(a,b,c);
+        }
+
+        function determineTriangle(a,b,c){
+            if(a == b && a == c){
+                window.alert('The triangle is EQUILATERAL.');
+            }
+            else if(a == b || b == c || a == c){
+                window.alert('The triangle is ISOSCELES.');
+            }
+            else{
+                window.alert('The triangle is SCALENE.');
+            }
+        }
+    </script>
+</body>
+</html>
